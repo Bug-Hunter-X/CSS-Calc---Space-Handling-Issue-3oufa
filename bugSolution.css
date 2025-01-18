@@ -1,0 +1,9 @@
+To fix the issue, remove any extra spaces within the `calc()` expression. The correct code should be:
+
+```css
+.element {
+  width: calc(100% - 20px);
+}
+```
+
+This version correctly performs the calculation by removing the space after the minus operator, ensuring that the browser correctly interprets the subtraction.  Always maintain proper spacing within your `calc()` expressions to avoid these types of issues.
