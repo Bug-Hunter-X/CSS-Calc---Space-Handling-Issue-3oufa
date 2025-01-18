@@ -1,0 +1,9 @@
+The CSS property `calc()` is used to perform calculations within CSS. However, there can be unexpected behavior if spaces are not handled correctly within the calculation. For example, the following code will cause issues: 
+
+```css
+.element {
+  width: calc(100% - 20px );
+}
+```
+
+The space after `-20px` will result in an invalid calculation in some browsers.  This happens because the parser may interpret it as two separate tokens instead of a single subtraction operation.
